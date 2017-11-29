@@ -13,6 +13,7 @@ public class Heapsort {
 		}
 	}
 	
+	//构建最大堆
 	private static void MaxHeapify(int[] A, int i, int hsize) {
 		int l = 2 * i + 1;
 		int r = 2 * i + 2;
@@ -53,6 +54,7 @@ public class Heapsort {
 		}
 	}
 	
+	//构建最小堆
 	private static void BuildMinHeap(int[] A, int hsize) {
 		for(int i = A.length/2; i >= 0; i--) {
 			Heapsort.MinHeapify(A, i, hsize);
